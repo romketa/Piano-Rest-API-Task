@@ -1,0 +1,24 @@
+Request:
+Reuest Headers:
+POST https://api.besttester.izh/login HTTP/1.1
+Host: besttester.izh
+Accept: */*
+User-Agent: PostmanRuntime/7.25.0
+Content-Type: application/x-www-form-urlencoded
+Connection: keep-alive
+Accept-Encoding: gzip, deflate, br
+
+{
+    "login": "admin",
+    "password": "admin123"
+}
+
+Response:
+HTTP/1.1 401 Unauthorized 
+Server: nginx
+Date: Wed, 03 Jun 2020 12:27:43 GMT
+Content-Type: application/json; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+Vary: Accept-Encoding

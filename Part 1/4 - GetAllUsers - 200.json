@@ -1,0 +1,78 @@
+Request:
+Reuest Headers
+GET https://api.besttester.izh/users HTTP/1.1
+Host: besttester.izh 
+Accept: */*
+User-Agent: PostmanRuntime/7.25.0
+Authorization: Bearer uxDoxvCEy5YhKNsILX2BLf9qgm-J6kz8pd4J
+Connection: keep-alive
+Accept-Encoding: gzip, deflate, br
+
+Response:
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 03 Jun 2020 12:27:43 GMT
+Content-Type: application/json; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Link: <https://api.besttester.izh/users>; rel=self
+Set-Cookie: _csrf=7bdb76c0b360a22014cb6b0f2cd7e30758a27ce286a0788259daa85510ec4284a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NR1WkOOlI-9RTIukAIJYnpFl3BWWXWc_%22%3B%7D; path=/; HttpOnly
+
+{ 
+ "result":[
+      {
+		 "id":"1",
+		 "age":"35",
+		 "gender":"male",
+		 "desired slary":"110500",
+         "first_name":"Ivan",
+         "last_name":"Ivanov",
+         "email":"Ivan_Ivanov@mail.com",
+		 "location":"Russia",
+         "experience":{
+            "job#1":{
+               "Company":"Google"
+            },
+            "job#2":{
+               "Company":"Amazon"
+            }
+         }
+      },
+      {
+		 "id":"2",
+		 "age":"21",
+		 "gender":"male",
+		 "desired slary":"40500",
+         "first_name":"Petya",
+         "last_name":"Petrov",
+         "email":"Petya_Petrov@mail.com",
+		 "location":"Russia",
+         "experience":{
+            "job#1":{
+               "Company":"Yandex"
+            }
+         }
+      },
+	  {
+		 "id":"3",
+		 "age":"25",
+		 "gender":"male",
+		 "desired slary":"80500",
+         "first_name":"Kolya",
+         "last_name":"Nikolaev",
+         "email":"Kolya_Nikolaev@mail.com",
+		 "location":"Russia",
+         "experience":{
+            "job#1":{
+               "Company":"EPAM"
+            },
+			"job#2":{
+               "Company":"Google"
+            }
+         }
+      },
+	]
+}
+ 
