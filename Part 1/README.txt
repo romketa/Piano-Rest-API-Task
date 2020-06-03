@@ -1,4 +1,26 @@
-1 - логин через паблик апи для получения токена
-2 - логин через паблик апи и получение ошибки авторизации 401 с несуществующим юзером
-3 - логин через паблик апи и получение ошибки запрета 403 с юзером у которого нет прав 
-4 - запрос к секьюрити апи и получение всех пользователей
+ASSUMPTIONS:
+1. Public API returns limited quantity data
+2. Private API returns all data
+3. Methods create, delete only for private API because the only User with privileges can manipulate with data
+4. Inserting several users are developed via an array 
+5. Parameter 'Desired salary' only for private API because only authorized request can get information about private information
+6. Methods delete and delayed response won't be involved due to specific tasks
+7. Parameters age, gender can be null
+8. Parameter desired salary is not null
+9. Password generated via specific method and won't be involved in task 2
+
+1 - Login through Public API for getting Token
+2 - Login through Public API for getting Token and error 401 due to a problem with the client’s credentials
+3 - Login through Public API for getting Token and error 403 due to a problem with access, User doesn't have access for getting Token
+Task 1:
+Positive 4 - Request through Public API for getting All Users without Token and getting a piece of users data
+Positive 5 - Request through Private API for getting All Users with Token and getting a all users data
+Negative 6 - Request through Private API for getting All Users with Token and getting error 500 in the case when Server has down
+Negative 7 - Request through Public API for getting All Users with Token getting error 404 in the case when request incorrect
+
+Task 2:
+8 - Request for creating new Users through Private API
+9 - Request for creating new Users through Private API and getting error 422 with incorrect values in parameters 
+10 - Request for creating new Users through Private API and getting error 400 with Invalid JSON data in request body: Syntax error.
+
+Task 3:

@@ -1,0 +1,81 @@
+Request:
+Reuest Headers:
+POST https://api.besttester.izh/users HTTP/1.1
+Host: besttester.izh
+Accept: */*
+User-Agent: PostmanRuntime/7.25.0
+Authorization: Bearer uxDoxvCEy5YhKNsILX2BLf9qgm-J6kz8pd4J
+Content-Type: application/x-www-form-urlencoded
+Connection: keep-alive
+Accept-Encoding: gzip, deflate, br
+
+[
+{
+	 "first_name": "Roman",
+	 "last_name": "Romanov",
+	 "age": "25",
+	 "gender": "male",
+	 "email": "Roman_Romanov@mail.com",
+	 "location": "Russia",
+	 "experience": [
+		{
+		"workplace": "Yandex",
+		"tittle": "Senior Developer",
+		"responsobilities": "Smth",
+		"worked from": "01-01-1995",
+		"worked till": "12-12-2001"
+		},
+		{
+		"workplace": "Amazon",
+		"tittle": "Senior Developer",
+		"responsobilities": "Smth",
+		"worked from": "12-12-2001",
+		"worked till": ""
+		}
+	 ]
+ },
+{
+	 "first_name": "Olya",
+	 "last_name": "Olgavna",
+	 "gender": "male",
+	 "desired_slary": "70421412412412421500",
+	 "email": "Olya_Olgavna@mail.com",
+	 "location": "Russia",
+	 "experience": [
+		{
+		"workplace": "Amazon",
+		"tittle": "Senior Developer",
+		"responsobilities": "Smth",
+		"worked from": "12-12-2001",
+		"worked till": ""
+		}
+	 ]
+ },
+ {
+	 "first_name": "Oksana",
+	 "last_name": "Petrovna",
+	 "age": "35",
+	 "desired_slary": "90500",
+	 "email": "ASDAS123123ASDAsd123",
+	 "location": "Russia",
+	 "experience": [
+		{
+		"workplace": "Amazon",
+		"tittle": "Developer",
+		"responsobilities": "Smth",
+		"worked from": "12-12-2011",
+		"worked till": ""
+		}
+	 ]
+ }
+ ]
+
+Response:
+HTTP/1.1 422 Unprocessable Entity
+Server: nginx
+Date: Wed, 03 Jun 2020 12:27:43 GMT
+Content-Type: application/json; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+Vary: Accept-Encoding

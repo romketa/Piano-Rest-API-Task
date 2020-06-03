@@ -26,52 +26,72 @@ Set-Cookie: _csrf=7bdb76c0b360a22014cb6b0f2cd7e30758a27ce286a0788259daa85510ec42
 		 "id":"1",
 		 "age":"35",
 		 "gender":"male",
-		 "desired slary":"110500",
+		 "desired_salary":"110500",
          "first_name":"Ivan",
          "last_name":"Ivanov",
          "email":"Ivan_Ivanov@mail.com",
 		 "location":"Russia",
-         "experience":{
-            "job#1":{
-               "Company":"Google"
+         "experience": [
+            {
+			"workplace": "Google",
+			"tittle": "Senior Developer",
+			"responsobilities": "Smth",
+			"worked from": "01-01-1992",
+			"worked till": "12-12-2000"
             },
-            "job#2":{
-               "Company":"Amazon"
+            {
+			"workplace": "Amazon",
+			"tittle": "Senior Developer",
+			"responsobilities": "Smth",
+			"worked from": "12-12-2000",
+			"worked till": ""
             }
-         }
+         ]
       },
       {
 		 "id":"2",
 		 "age":"21",
 		 "gender":"male",
-		 "desired slary":"40500",
+		 "desired_salary":"40500",
          "first_name":"Petya",
          "last_name":"Petrov",
          "email":"Petya_Petrov@mail.com",
 		 "location":"Russia",
-         "experience":{
-            "job#1":{
-               "Company":"Yandex"
-            }
-         }
+         "experience": [
+            {
+			"workplace": "Yandex",
+			"tittle": "Developer",
+			"responsobilities": "Smth",
+			"worked from": "12-12-2012",
+			"worked till": ""
+			}
+		]
       },
 	  {
 		 "id":"3",
 		 "age":"25",
 		 "gender":"male",
-		 "desired slary":"80500",
+		 "desired_salary":"80500",
          "first_name":"Kolya",
          "last_name":"Nikolaev",
          "email":"Kolya_Nikolaev@mail.com",
 		 "location":"Russia",
-         "experience":{
-            "job#1":{
-               "Company":"EPAM"
+         "experience": [
+            {
+			"workplace":"EPAM",
+			"tittle":"Developer",
+			"responsobilities":"Smth",
+			"worked from": "12-12-2016",
+			"worked till": "12-12-2018"
             },
-			"job#2":{
-               "Company":"Google"
+            {
+			"workplace":"Google",
+			"tittle":"Senior Developer",
+			"responsobilities":"Smth",
+			"worked from": "12-12-2018",
+			"worked till": ""
             }
-         }
+         ]
       },
 	]
 }

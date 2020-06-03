@@ -1,0 +1,85 @@
+Request:
+Reuest Headers
+GET https://api.besttester.izh/users HTTP/1.1
+Host: besttester.izh 
+Accept: */*
+User-Agent: PostmanRuntime/7.25.0
+Connection: keep-alive
+Accept-Encoding: gzip, deflate, br
+
+Response:
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 03 Jun 2020 12:27:43 GMT
+Content-Type: application/json; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Link: <https://api.besttester.izh/users>; rel=self
+Set-Cookie: _csrf=7bdb76c0b360a22014cb6b0f2cd7e30758a27ce286a0788259daa85510ec4284a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NR1WkOOlI-9RTIukAIJYnpFl3BWWXWc_%22%3B%7D; path=/; HttpOnly
+
+{ 
+ "result":[
+      {
+		 "first_name": "Ivan",
+         "last_name": "Ivanov",
+         "email": "Ivan_Ivanov@mail.com",
+		 "location": "Russia",
+         "experience": [
+            {
+			"workplace": "Google",
+			"tittle": "Senior Developer",
+			"responsobilities": "Smth",
+			"worked from": "01-01-1992",
+			"worked till": "12-12-2000"
+            },
+            {
+			"workplace": "Amazon",
+			"tittle": "Senior Developer",
+			"responsobilities": "Smth",
+			"worked from": "12-12-2000",
+			"worked till": ""
+            }
+         ]
+      },
+      {
+		 "first_name": "Petya",
+         "last_name": "Petrov",
+         "email": "Petya_Petrov@mail.com",
+		 "location": "Russia",
+         "experience": [
+            {
+			"workplace": "Yandex",
+			"tittle": "Developer",
+			"responsobilities": "Smth",
+			"worked from": "12-12-2012",
+			"worked till": ""
+			}
+		]
+      },
+	  {
+		 "first_name":"Kolya",
+         "last_name":"Nikolaev",
+         "email":"Kolya_Nikolaev@mail.com",
+		 "location":"Russia",
+         "experience": [
+            {
+			"workplace":"EPAM",
+			"tittle":"Developer",
+			"responsobilities":"Smth",
+			"worked from": "12-12-2016",
+			"worked till": "12-12-2018"
+            },
+            {
+			"workplace":"Google",
+			"tittle":"Senior Developer",
+			"responsobilities":"Smth",
+			"worked from": "12-12-2018",
+			"worked till": ""
+            }
+         ]
+      },
+	]
+}
+ 
