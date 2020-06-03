@@ -1,0 +1,5 @@
+POST versus GET. 
+I'd like to tell my opinion and provide reasons. 
+In general, POST is used to send data to a server to create, update or get resources and GET is used to request data from a specified resources. So, POST more is secure then GET, POST contains parameters in the body, but GET has parameters as a part of the URL. In addition, Data in the GET method is visible to everyone in the URL, but Data in the POST isn't displayed in the URL. Also, parameters for GET remain in browser history, but for POST not saved in browser history. POST doesn't have restriciton for data lenght or data type, GET has restrictions for data lenght(limited URL lenght is 2048) and data type(only ASCII characters). Also, GET request is cached. 
+Besides, GET request is safe and idempotent, i.e. request doesn't change a state of the resource and can be repeated, but POST request isn't a safe and idempotent, i.e. request can change a state and repeated repetition will produce an effect depending on the number of repetitions.
+Finally, GET and POST methods are really different and each applies for particular cases.
