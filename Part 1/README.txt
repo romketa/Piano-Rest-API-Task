@@ -13,14 +13,15 @@ ASSUMPTIONS:
 2 - Login through Public API for getting Token and error 401 due to a problem with the client’s credentials
 3 - Login through Public API for getting Token and error 403 due to a problem with access, User doesn't have access for getting Token
 Task 1:
-Positive 4 - Request through Public API for getting All Users without Token and getting a piece of users data
-Positive 5 - Request through Private API for getting All Users with Token and getting a all users data
-Negative 6 - Request through Private API for getting All Users with Token and getting error 500 in the case when Server has down
-Negative 7 - Request through Public API for getting All Users with Token getting error 404 in the case when request incorrect
+4 - Request through Private API for getting All Users with Token and getting a all users data
+5 - Request through Private API for getting All Users with Token and getting error 500 in the case when Server has down
+6 - Request through Public API for getting All Users with Token getting error 404 in the case when request incorrect
 
 Task 2:
-8 - Request for creating new Users through Private API
-9 - Request for creating new Users through Private API and getting error 422 with incorrect values in parameters 
-10 - Request for creating new Users through Private API and getting error 400 with Invalid JSON data in request body: Syntax error.
+7 - Request for creating new Users through Private API
+8 - Request for creating new Users through Private API and getting error 422 with incorrect values in parameters 
+9 - Request for creating new Users through Private API and getting error 400 with Invalid JSON data in request body: Syntax error.
 
 Task 3:
+10 - Request for searcing users with desired salary less then 100.000 and use the search feature from Elascticsearch
+11 - Request for searcing users with desired salary less then 100.000 and getting error 405 due to server has rejected that particular method for the requested resource

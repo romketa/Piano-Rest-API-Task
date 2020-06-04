@@ -1,0 +1,141 @@
+Request:
+Reuest Headers:
+GET https://api.besttester.izh/users/_search HTTP/1.1
+Host: besttester.izh
+Accept: */*
+User-Agent: PostmanRuntime/7.25.0
+Authorization: Bearer uxDoxvCEy5YhKNsILX2BLf9qgm-J6kz8pd4J
+Content-Type: application/x-www-form-urlencoded
+Connection: keep-alive
+Accept-Encoding: gzip, deflate, br
+{
+    "query": {
+        "range" : {
+            "desired_salary": {
+                "lt": "100000"
+            }
+        }
+    },
+	"sort": [
+		{ "desired_salary": "desc" }
+	],
+	"_source": ["desired_salary", "first_name", "last_name", "email", "experience"]
+}
+
+Response:
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 03 Jun 2020 12:27:43 GMT
+Content-Type: application/json; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+Vary: Accept-Encoding
+
+{ 
+"took": 1
+"timed_out": false,
+  "terminated_early": true,
+  "_shards": {
+    "total": 4,
+    "successful": 4,
+    "skipped" : 0,
+    "failed": 0
+  },
+  "hits": {
+    "total" : 1,
+    "max_score": 1,
+    "hits": [
+		  {
+			 "_index":"api.besttester.izh",
+			 "_type":"_doc",
+			 "id":"5",
+			 "_score":"6",
+			 "_sources":{
+				 "desired slary": "90500",
+				 "first_name": "Oksana",
+				 "last_name": "Petrovna",
+				 "email": "Oksana_Petrovna@mail.com",
+				 "experience": [
+					{
+					"workplace": "Amazon",
+					"tittle": "Developer",
+					"responsobilities": "Smth",
+					"worked from": "12-12-2011",
+					"worked till": ""
+					}
+				 ]
+			 }
+		 },
+		 {
+		     "_index":"api.besttester.izh",
+			 "_type":"_doc",
+			 "id":"3",
+			 "_score":"1",
+			 "_sources":{
+				 "desired_salary":"80500",
+				 "first_name":"Kolya",
+				 "last_name":"Nikolaev",
+				 "email":"Kolya_Nikolaev@mail.com",
+				 "experience": [
+					{
+					"workplace":"EPAM",
+					"tittle":"Developer",
+					"responsobilities":"Smth",
+					"worked from": "12-12-2016",
+					"worked till": "12-12-2018"
+					},
+					{
+					"workplace":"Google",
+					"tittle":"Senior Developer",
+					"responsobilities":"Smth",
+					"worked from": "12-12-2018",
+					"worked till": ""
+					}
+				 ]
+				}
+		   },
+		   {
+			 "_index":"api.besttester.izh",
+			 "_type":"_doc",
+			 "id":"5",
+			 "_score":"1",
+			 "_sources":{
+				 "desired slary": "70500",
+				 "first_name": "Olya",
+				 "last_name": "Olgavna",
+				 "email": "Olya_Olgavna@mail.com",
+				 "experience": [
+					{
+					"workplace": "Amazon",
+					"tittle": "Senior Developer",
+					"responsobilities": "Smth",
+					"worked from": "12-12-2001",
+					"worked till": ""
+					}
+				 ]
+			 }
+		   },
+		   {
+			 "_index":"api.besttester.izh",
+			 "_type":"_doc",
+			 "id":"2",
+			 "_score":"1",
+			 "_sources":{
+				 "desired_salary":"40500",
+				 "first_name":"Petya",
+				 "last_name":"Petrov",
+				 "email":"Petya_Petrov@mail.com",
+				 "experience": [
+					{
+					"workplace": "Yandex",
+					"tittle": "Developer",
+					"responsobilities": "Smth",
+					"worked from": "12-12-2012",
+					"worked till": ""
+					}
+				]
+			}
+		   }		 
+]
+}
